@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flower Payment Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <h1 class="heading">🌸 Flower Payment Section 🌸</h1>
+  <div class="wrapper">
+
+    <!-- Shipping Info -->
+    <div class="card">
+
+      <div class="title">Shipping Info</div>
+      <div class="box">
+        <form action="#" id="myform">
+          <input type="text" name="name" placeholder="Full Name" required><br>
+          <input type="text" name="address" placeholder="Shipping Address" required><br>
+          <input type="text" name="product" placeholder="product name" required><br>
+      </div>
+    </div>
+
+    <!-- Payment Options -->
+    <div class="card">
+      <div class="title">Payment Options</div>
+      <div class="box">
+          <label><input type="radio" name="card_option" value="Visa" required> Visa</label><br>
+          <label><input type="radio" name="card_option" value="Mastercard"> Mastercard</label><br>
+          <label><input type="radio" name="card_option" value="UPI"> UPI</label><br>
+      </div>
+    </div>
+
+    <!-- QR Code -->
+    <div class="card">
+      <div class="img"><img src="qr.png" alt="QR Code"></div>
+      <div class="title">Scan to Pay</div>
+      <div class="box">
+        <p>Scan this QR code using any UPI app to complete your payment.</p>
+      </div>
+    </div>
+
+    <!-- Pay Now Button -->
+    <div class="card">
+      <div class="img"><img src="tulips.jpg" alt="Pay Now"></div>
+      <div class="title">Finish Payment</div>
+      <div class="box">
+          <button type="submit" class="btn", id="btn">Pay Now</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<script>
+  document.getElementById("myform").addEventListener("submit",function(e){
+  e.preventDefault();
+  alert("Congratulations!! payment successful!!!");
+  });
+</script>
+<center><a href="home.html" class="btn">Back to Homepage</a></center>
+</body>
+</html>

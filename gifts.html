@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gifts | Bloom & Leaf</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      font-family: 'Pacifico', cursive, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f28bbd;
+      padding: 10px 20px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      font-family: 'Pacifico', cursive, sans-serif;
+      
+
+    }
+
+    .logo img {
+      width: 70px;
+      height: 70px;
+      margin-right: 10px;
+    }
+
+    .logo span {
+      color: white;
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .gift-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .gift-item {
+      background-color: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .gift-item:hover {
+      transform: scale(1.03);
+    }
+
+    .gift-item img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+
+    .gift-details {
+      padding: 15px;
+    }
+
+    .gift-details h3 {
+      margin: 0;
+      font-size: 20px;
+    }
+
+    .gift-details p {
+      font-size: 14px;
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .gift-details .price {
+      color: green;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .gift-details a.button {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #28a745;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .gift-details a.button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="l3.jpg" alt="Logo">
+        <span>Bloom & Leaf</span>
+      </div>
+      <ul class="nav-links">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="plant.html">Plants</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Our Special Gifts</h1>
+    <div class="gift-container">
+      <!-- Gift Item Template -->
+      <div class="gift-item">
+        <img src="teddy.jpg" alt="Teddy Bear Gift">
+        <div class="gift-details">
+          <h3>Fluffy Teddy Bear</h3>
+          <p>Soft and adorable teddy for your loved one.</p>
+          <p class="price">₹499</p>
+          <a href="payment.html" class="button">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="gift-item">
+        <img src="choco.jpg" alt="Chocolate Gift">
+        <div class="gift-details">
+          <h3>Chocolate Delight</h3>
+          <p>Luxury assorted chocolates in a premium box.</p>
+          <p class="price">₹699</p>
+          <a href="payment.html" class="button">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="gift-item">
+        <img src="rose.jpg" alt="Rose Bouquet">
+        <div class="gift-details">
+          <h3>Rose Bouquet</h3>
+          <p>Fresh red roses wrapped beautifully for any occasion.</p>
+          <p class="price">₹899</p>
+          <a href="payment.html" class="button">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="gift-item">
+        <img src="scent.jpg" alt="Scented Candle">
+        <div class="gift-details">
+          <h3>Scented Candle Set</h3>
+          <p>Aromatic candles in elegant jars to relax your senses.</p>
+          <p class="price">₹499</p>
+          <a href="payment.html" class="button">Buy Now</a>
+        </div>
+      </div>
+
+      <div class="gift-item">
+        <img src="mug1.jpg" alt="Mug Gift">
+        <div class="gift-details">
+          <h3>Custom Mug</h3>
+          <p>Personalized mug with your photo or message.</p>
+          <p class="price">₹349</p>
+          <a href="payment.html" class="button">Buy Now</a>
+        </div>
+      </div>
+      
+
+       <div class="gift-item">
+        <img src="mug2.jpg" alt="Mug Gift">
+        <div class="gift-details">
+          <h3>Custom Mug</h3>
+          <p>Personalized mug with your photo or message.</p>
+          <p class="price">₹349</p>
+          <a href="payment.html" class="button">Buy Now</a>
+        </div>
+      </div>
+      <!-- Add more gifts as needed -->
+
+    </div>
+  </main>
+
+</body>
+</html>
